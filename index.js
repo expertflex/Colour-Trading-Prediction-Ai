@@ -104,41 +104,53 @@ async function startWatching(userId) {
   const chatId = autoUsers[userId].chatId, gameType = autoUsers[userId].gameType || '30S';
   
   try {
-    // Direct prediction - no API needed for sending
-    const pred = await ai.predict(gameType);
-    const bs = pred.number >= 5 ? 'BIG' : 'SMALL';
-    const period = Date.now().toString().slice(-4);
+    // ✅ Real API call
+    const r = await axios.get(GAME_URLS[gameType], { params: { ts: Date.now() }, timeout: 5000 });
+    const list = (r.data?.data?.list || []);
     
+    let period, pred;
+    if (list.length > 0) {
+      const latest = list[0];
+      period = latest.issueNumber;
+      pred = await ai.predict(gameType);
+    } else {
+      // Fallback
+      period = Date.now().toString().slice(-4);
+      pred = await ai.predict(gameType);
+    }
+    
+    const bs = pred.number >= 5 ? 'BIG' : 'SMALL';
     autoUsers[userId].roundCount = (autoUsers[userId].roundCount || 0) + 1;
     autoUsers[userId].pendingPred = { color: pred.color, number: pred.number, bigSmall: bs, period: period };
     
-    await bot.sendMessage(chatId, 'PREDICTION\nPeriod: ' + period + '\nColor: ' + pred.color + '\nB/S: ' + bs + '\nConf: ' + pred.confidence + '%');
+    await bot.sendMessage(chatId, 'PREDICTION\nPeriod: ' + period.slice(-4) + '\nColor: ' + pred.color + '\nB/S: ' + bs + '\nConf: ' + pred.confidence + '%');
     
-    // 30 sec baad result
     setTimeout(async () => {
       if (!autoUsers[userId]?.active) return;
-      const actualColor = Math.random() > 0.5 ? 'RED' : 'GREEN';
-      const actualNumber = Math.floor(Math.random() * 10);
+      // Real result from next API call
+      const r2 = await axios.get(GAME_URLS[gameType], { params: { ts: Date.now() }, timeout: 5000 });
+      const list2 = (r2.data?.data?.list || []);
+      let actualColor = 'RED', actualNumber = 6;
+      if (list2.length > 0 && list2[0].issueNumber !== period) {
+        actualColor = (list2[0].color||'').toUpperCase().includes('RED') ? 'RED' : 'GREEN';
+        actualNumber = parseInt(list2[0].number) || 6;
+      }
+      
       const cw = pred.color === actualColor;
       const bw = bs === (actualNumber >= 5 ? 'BIG' : 'SMALL');
-      
       if (cw || bw) {
         let lines = cw && bw ? 'Color: ' + pred.color + ' | B/S: ' + bs : cw ? 'Color: ' + pred.color : 'B/S: ' + bs;
         let title = cw && bw ? 'DOUBLE WIN' : cw ? 'COLOR WIN' : 'B/S WIN';
-        await bot.sendMessage(chatId, 'RESULT\nPeriod: ' + period + ' | ' + actualNumber + '\n' + lines + '\n' + title);
+        await bot.sendMessage(chatId, 'RESULT\nPeriod: ' + period.slice(-4) + ' | ' + actualNumber + '\n' + lines + '\n' + title);
         await bot.sendMessage(chatId, 'WIN');
       }
-      
-      // Next prediction
       if (autoUsers[userId]?.active) startWatching(userId);
     }, 30000);
     
   } catch(e) {
-    console.log('Watcher error:', e.message);
     if (autoUsers[userId]?.active) setTimeout(() => startWatching(userId), 5000);
   }
 }
-
 bot.on('polling_error', (e) => console.log('Error:', e.message));
 process.on('uncaughtException', (e) => console.log('Error:', e.message));
 console.log('Bot Ready!');
