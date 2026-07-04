@@ -1,0 +1,326 @@
+{
+  "users": {
+    "7329384967": {
+      "id": "7329384967",
+      "username": "aivonagency",
+      "firstName": "Manish",
+      "plan": "none",
+      "trialUsed": false,
+      "expiresAt": null,
+      "totalPredictions": 0,
+      "wins": 0,
+      "losses": 0,
+      "dailyPredictions": 0,
+      "lastPredictionDate": "",
+      "referralCode": "REF384967",
+      "referredBy": null,
+      "referralEarnings": 0,
+      "balance": 0,
+      "joinedAt": "2026-07-04T14:58:53.483Z",
+      "lastActive": "2026-07-04T14:58:53.483Z"
+    },
+    "8105949155": {
+      "id": "8105949155",
+      "username": "inayakhanna",
+      "firstName": "Inaya",
+      "plan": "premium",
+      "trialUsed": true,
+      "expiresAt": "2026-08-03T15:12:59.502Z",
+      "totalPredictions": 22,
+      "wins": 9,
+      "losses": 9,
+      "dailyPredictions": 0,
+      "lastPredictionDate": "",
+      "referralCode": "REF949155",
+      "referredBy": null,
+      "referralEarnings": 0,
+      "balance": 0,
+      "joinedAt": "2026-07-04T14:59:39.693Z",
+      "lastActive": "2026-07-04T14:59:39.693Z"
+    }
+  },
+  "predictions": [
+    {
+      "userId": "8105949155",
+      "period": "20260704100051815",
+      "predictedColor": "RED",
+      "predictedNumber": 4,
+      "confidence": 63,
+      "timestamp": "2026-07-04T15:07:27.492Z",
+      "status": "pending"
+    },
+    {
+      "userId": "8105949155",
+      "period": "20260704100051816",
+      "predictedColor": "RED",
+      "predictedNumber": 0,
+      "confidence": 60,
+      "timestamp": "2026-07-04T15:07:30.293Z",
+      "status": "win",
+      "actualColor": "RED",
+      "actualNumber": 2
+    },
+    {
+      "userId": "8105949155",
+      "period": "20260704100051817",
+      "predictedColor": "RED",
+      "predictedNumber": 0,
+      "confidence": 52,
+      "timestamp": "2026-07-04T15:08:00.353Z",
+      "status": "win",
+      "actualColor": "RED",
+      "actualNumber": 0
+    },
+    {
+      "userId": "8105949155",
+      "period": "20260704100051818",
+      "predictedColor": "RED",
+      "predictedNumber": 8,
+      "confidence": 61,
+      "timestamp": "2026-07-04T15:08:29.508Z",
+      "status": "loss",
+      "actualColor": "GREEN",
+      "actualNumber": 5
+    },
+    {
+      "userId": "8105949155",
+      "period": "20260704100051819",
+      "predictedColor": "GREEN",
+      "predictedNumber": 5,
+      "confidence": 84,
+      "timestamp": "2026-07-04T15:08:59.702Z",
+      "status": "loss",
+      "actualColor": "RED",
+      "actualNumber": 4
+    },
+    {
+      "userId": "8105949155",
+      "period": "20260704100051820",
+      "predictedColor": "GREEN",
+      "predictedNumber": 9,
+      "confidence": 76,
+      "timestamp": "2026-07-04T15:09:28.839Z",
+      "status": "win",
+      "actualColor": "GREEN",
+      "actualNumber": 5
+    },
+    {
+      "userId": "8105949155",
+      "period": "20260704100051821",
+      "predictedColor": "GREEN",
+      "predictedNumber": 7,
+      "confidence": 77,
+      "timestamp": "2026-07-04T15:09:58.873Z",
+      "status": "win",
+      "actualColor": "GREEN",
+      "actualNumber": 5
+    },
+    {
+      "userId": "8105949155",
+      "period": "20260704100051822",
+      "predictedColor": "GREEN",
+      "predictedNumber": 7,
+      "confidence": 79,
+      "timestamp": "2026-07-04T15:10:28.955Z",
+      "status": "pending"
+    },
+    {
+      "userId": "8105949155",
+      "period": "20260704100051827",
+      "predictedColor": "RED",
+      "predictedNumber": 2,
+      "confidence": 56,
+      "timestamp": "2026-07-04T15:13:09.936Z",
+      "status": "loss",
+      "actualColor": "GREEN",
+      "actualNumber": 9
+    },
+    {
+      "userId": "8105949155",
+      "period": "20260704100051828",
+      "predictedColor": "RED",
+      "predictedNumber": 8,
+      "confidence": 53,
+      "timestamp": "2026-07-04T15:13:28.949Z",
+      "status": "win",
+      "actualColor": "RED",
+      "actualNumber": 6
+    },
+    {
+      "userId": "8105949155",
+      "period": "20260704100051828",
+      "predictedColor": "RED",
+      "predictedNumber": 4,
+      "confidence": 52,
+      "timestamp": "2026-07-04T15:13:49.678Z",
+      "status": "pending"
+    },
+    {
+      "userId": "8105949155",
+      "period": "20260704100051829",
+      "predictedColor": "RED",
+      "predictedNumber": 4,
+      "confidence": 56,
+      "timestamp": "2026-07-04T15:13:59.220Z",
+      "status": "win",
+      "actualColor": "RED",
+      "actualNumber": 4
+    },
+    {
+      "userId": "8105949155",
+      "period": "20260704100051830",
+      "predictedColor": "RED",
+      "predictedNumber": 6,
+      "confidence": 56,
+      "timestamp": "2026-07-04T15:14:29.845Z",
+      "status": "loss",
+      "actualColor": "GREEN",
+      "actualNumber": 3
+    },
+    {
+      "userId": "8105949155",
+      "period": "20260704100051831",
+      "predictedColor": "RED",
+      "predictedNumber": 4,
+      "confidence": 61,
+      "timestamp": "2026-07-04T15:14:58.374Z",
+      "status": "loss",
+      "actualColor": "GREEN",
+      "actualNumber": 7
+    },
+    {
+      "userId": "8105949155",
+      "period": "20260704100051832",
+      "predictedColor": "RED",
+      "predictedNumber": 2,
+      "confidence": 56,
+      "timestamp": "2026-07-04T15:15:27.983Z",
+      "status": "loss",
+      "actualColor": "GREEN",
+      "actualNumber": 7
+    },
+    {
+      "userId": "8105949155",
+      "period": "20260704100051833",
+      "predictedColor": "RED",
+      "predictedNumber": 0,
+      "confidence": 55,
+      "timestamp": "2026-07-04T15:15:58.460Z",
+      "status": "win",
+      "actualColor": "RED",
+      "actualNumber": 0
+    },
+    {
+      "userId": "8105949155",
+      "period": "20260704100051834",
+      "predictedColor": "RED",
+      "predictedNumber": 0,
+      "confidence": 52,
+      "timestamp": "2026-07-04T15:16:29.668Z",
+      "status": "win",
+      "actualColor": "RED",
+      "actualNumber": 2
+    },
+    {
+      "userId": "8105949155",
+      "period": "20260704100051835",
+      "predictedColor": "RED",
+      "predictedNumber": 8,
+      "confidence": 51,
+      "timestamp": "2026-07-04T15:16:59.034Z",
+      "status": "loss",
+      "actualColor": "GREEN",
+      "actualNumber": 9
+    },
+    {
+      "userId": "8105949155",
+      "period": "20260704100051836",
+      "predictedColor": "RED",
+      "predictedNumber": 6,
+      "confidence": 61,
+      "timestamp": "2026-07-04T15:17:29.017Z",
+      "status": "loss",
+      "actualColor": "GREEN",
+      "actualNumber": 7
+    },
+    {
+      "userId": "8105949155",
+      "period": "20260704100051837",
+      "predictedColor": "RED",
+      "predictedNumber": 8,
+      "confidence": 60,
+      "timestamp": "2026-07-04T15:17:59.023Z",
+      "status": "win",
+      "actualColor": "RED",
+      "actualNumber": 0
+    },
+    {
+      "userId": "8105949155",
+      "period": "20260704100051838",
+      "predictedColor": "RED",
+      "predictedNumber": 0,
+      "confidence": 57,
+      "timestamp": "2026-07-04T15:18:29.207Z",
+      "status": "loss",
+      "actualColor": "GREEN",
+      "actualNumber": 3
+    },
+    {
+      "userId": "8105949155",
+      "period": "20260704100051839",
+      "predictedColor": "RED",
+      "predictedNumber": 4,
+      "confidence": 56,
+      "timestamp": "2026-07-04T15:18:58.974Z",
+      "status": "pending"
+    }
+  ],
+  "stats": {
+    "totalPredictions": 22,
+    "totalWins": 9,
+    "totalRevenue": 0
+  },
+  "analytics": {
+    "hourlyWins": {},
+    "consecutiveWin": 0,
+    "consecutiveLoss": 0
+  },
+  "pendingPayments": [
+    {
+      "userId": "8105949155",
+      "type": "Manual",
+      "txHash": "Hhhhh",
+      "timestamp": "2026-07-04T15:00:55.542Z",
+      "status": "approved"
+    },
+    {
+      "userId": "7329384967",
+      "type": "Manual",
+      "txHash": "[04-07-2026 20:30] Colour Trading Predictions: 🇮🇳 UPI Payment\n\n🔗 Not set\n💰 Rs.2499\n\n📤 Send UTR after payment.\n[04-07-2026 20:30] Inaya Khanna: Hhhhh\n[04-07-2026 20:30] Colour Trading Predictions: ✅ Payment proof received!\n[04-07-2026 20:31] Colour Trading Predictions: 🎉 Premium Activated!\n/start\n[04-07-2026 20:31] Inaya Khanna: /start\n[04-07-2026 20:31] Colour Trading Predictions: 🤖 WinGo AI\n\n👤 Inaya\n📅 Plan: Trial\n📊 Status: ⚫️ STOPPED\n🔮 Today: 0/100\n💰 Balance: Rs.0\n[04-07-2026 20:31] Inaya Khanna: /setting\n[04-07-2026 20:32] Inaya Khanna: /start\n[04-07-2026 20:32] Colour Trading Predictions: 🤖 WinGo AI\n\n👤 Inaya\n📅 Plan: Trial\n📊 Status: ⚫️ STOPPED\n🔮 Today: 0/100\n💰 Balance: Rs.0\n[04-07-2026 20:33] Colour Trading Predictions: 📅 Plan: trial\n💰 Balance: Rs.0",
+      "timestamp": "2026-07-04T15:04:56.976Z",
+      "status": "pending"
+    },
+    {
+      "userId": "8105949155",
+      "type": "Manual",
+      "txHash": "963258963258",
+      "timestamp": "2026-07-04T15:12:13.840Z",
+      "status": "pending"
+    }
+  ],
+  "premiumUsers": [
+    "8105949155"
+  ],
+  "supportChats": {},
+  "activityLog": [],
+  "withdrawRequests": [],
+  "referralCommissions": [],
+  "settings": {
+    "indianPaymentLink": "",
+    "btcAddress": "",
+    "usdtAddress": "",
+    "premiumPrice": 2499,
+    "referralCommission": 500,
+    "minWithdraw": 2500
+  }
+}

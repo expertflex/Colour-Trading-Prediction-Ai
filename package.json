@@ -1,0 +1,17 @@
+{
+  "name": "wingo-full-saas",
+  "version": "10.0.0",
+  "description": "WinGo Full SaaS Bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "admin": "node server.js"
+  },
+  "dependencies": {
+    "node-telegram-bot-api": "^0.64.0",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  }
+}
